@@ -1,16 +1,37 @@
 body {
-    background-color: #80d4ea;
+  background-color: #80d4ea;
+  font-family: courier, monospace;
 }
 
-#clock {
-    height: 100px;
-    width: 800px;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    padding-top: 70px;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 100px;
+.clock {
+  width: 800px;
+  margin: 10px auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding: 20px 0;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.clock div {
+  background-color: #000;
+  display: inline;
+  padding: 10px;
+}
+
+#us-west {
+  background-color: #f00;
+}
+
+#us-east {
+  background-color: #888;
+}
+
+#sk-seoul {
+  background-color: #008;
+}
+
+#de-berlin {
+  background-color: #880;
 }
