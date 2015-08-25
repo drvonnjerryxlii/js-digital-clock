@@ -1,16 +1,18 @@
 // Your code here
 
 function getTime(whatZone) {
+  var displayLocale; var timeZone;
   switch (whatZone) {
     case "us-east":
-      return new Date().toLocaleString("EN-US", { timeZone: "America/New_York" });
+      displayLocale = "EN-US"; timeZone = "America/New_York"; break;
     case "sk-seoul":
-      return new Date().toLocaleString("KO", { timeZone: "Asia/Seoul" });
+      displayLocale = "KO"; timeZone = "Asia/Seoul"; break;
     case "us-west":
-      return new Date().toLocaleString("EN-US", { timeZone: "America/Los_Angeles" });
+      displayLocale = "EN-US"; timeZone = "America/Los_Angeles"; break;
     case "de-berlin":
-      return new Date().toLocaleString("DE", { timeZone: "Europe/Berlin" });
+      displayLocale = "DE"; timeZone = "Europe/Berlin"; break;
   }
+  return new Date().toLocaleString(displayLocale, { timeZone: timeZone });
 }
 
 function displayTime() {
