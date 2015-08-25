@@ -1,7 +1,7 @@
 # Digital Clock
 
 ### Create a digital clock in your browser!
-- Check out the live version [here](#).
+- Check out the live version [here](#http://drvonnjerryxlii.github.io/js-digital-clock/).
 
 ### Getting Started
 - Create a function which will do all of the work to calculate and show the time.
